@@ -28,6 +28,10 @@ header {
     z-index: 2;
 }
 
+a{
+    color: white;
+}
+
 
 /**
  * Content CSS
