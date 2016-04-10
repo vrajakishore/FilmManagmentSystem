@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="mainApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +7,35 @@
     <link href="//cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
     <link href="css/myStyle.css" rel="stylesheet" type="text/css" />
     <script src="//cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.0.4/angular-material.min.css">
+    <link href="js/app.js">
 </head>
 <body>
+
 <header class="mui-appbar mui--z1">
     <div class="mui-container">
         <table width="100%">
             <tr class="mui--appbar-height">
-                <td class="mui--text-title">FIlm Managment System </td>
+                <td class="mui--text-title">Film Management System </td>
                 <td align="right">
                     <ul class="mui-list--inline mui--text-body2">
-                        <li><a href="#">Create</a></li>
-                        <li><a href="#">Update</a></li>
-                        <li><a href="#">Delete</a></li>
-                        <li><a href="#">List All</a></li>
-                        <li><a href="#">Search</a></li>
+                        <li><a href="#create">Create</a></li>
+                        <li><a href="#update">Update</a></li>
+                        <li><a href="#delete">Delete</a></li>
+                        <li><a href="#listAll">List All</a></li>
+                        <li><a href="#search">Search</a></li>
                     </ul>
                 </td>
             </tr>
         </table>
     </div>
 </header>
+
+
 <div id="content-wrapper" class="mui--text-center">
+
+
+
     <div class="mui--appbar-height"></div>
     <br>
     <br>
@@ -35,11 +43,43 @@
     <br>
     <br>
     <button class="mui-btn mui-btn--raised">Get started</button>
+
+    <div class="mui-container-fluid">
+        <div class="mui-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi felis, tincidunt porttitor pulvinar sit amet, finibus non tellus. Pellentesque egestas efficitur ex quis rhoncus. Cras ut hendrerit risus. Sed finibus, enim venenatis lobortis suscipit, velit lacus gravida magna, sollicitudin molestie nibh felis et sapien. Aliquam lacinia molestie felis in tincidunt. In pulvinar lectus eu hendrerit ultrices. Pellentesque metus orci, dignissim eget velit in, rhoncus eleifend purus. Nullam at tempor libero. Donec lacinia risus eget sollicitudin vulputate. Pellentesque laoreet faucibus urna id tristique. Sed neque lectus, molestie nec leo dignissim, mattis dapibus purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet nibh at dapibus vulputate. Fusce ac dolor blandit turpis volutpat volutpat quis nec nibh.
+                Suspendisse eleifend egestas erat, vitae viverra augue imperdiet et. Aliquam ut turpis augue. Vivamus sodales id enim eget suscipit. Nunc mi lorem, fringilla ut nisi consectetur, viverra malesuada erat. Nunc nec mi nibh. Fusce tincidunt rhoncus augue, ac consectetur mi. Sed vel nisi sed leo fermentum lacinia eu sit amet eros. Quisque a tempus mi, ut dictum nisi. Donec non tempor ex.
+                Sed a turpis lacinia, convallis justo eget, dictum sapien. Duis tincidunt enim eu sem blandit elementum. Ut sollicitudin est ut ligula iaculis pellentesque. Quisque tempor, augue id tincidunt pretium, quam libero condimentum enim, eget aliquam turpis nulla laoreet tortor. Fusce sed cursus leo, eget pellentesque mi. Nunc ut massa lacus. Curabitur bibendum, erat et rhoncus euismod, justo sapien auctor mauris, ut dapibus urna justo id neque. Vivamus eu metus congue ante aliquam pulvinar at ut eros. Nullam molestie suscipit tempor. Praesent bibendum consequat est, sed fermentum ex. Proin vitae suscipit est. Pellentesque scelerisque dapibus dolor eget congue.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam ac augue urna. Aliquam aliquam nisl vel tortor lacinia sagittis. Morbi et suscipit nisi, a ultrices massa. Fusce tristique lorem id risus consequat, eu gravida libero euismod. Integer in venenatis elit, ac placerat libero. Cras scelerisque et nisi a scelerisque. Nulla at lectus ac mauris tincidunt lacinia id at mi. Phasellus placerat maximus sem vitae fermentum. Suspendisse potenti.
+                Sed facilisis neque vitae ante cursus pretium. Maecenas porta facilisis augue ac lacinia. Praesent congue consectetur dictum. Donec non faucibus orci, eget sollicitudin ligula. Vivamus elementum ut lacus eget posuere. Quisque volutpat, lacus ut porta malesuada, sem lacus hendrerit leo, vel imperdiet erat dolor sit amet enim. Praesent eu turpis at diam scelerisque mollis.
+            </p>
+            <div style="float: inherit" class="mui-panel">
+                <h3>Add Actor</h3>
+            </div>
+            <div class="mui-panel">
+                <h3>Add Film</h3>
+            </div>
+
+        </div>
+    </div>
 </div>
+
+
 <footer>
     <div class="mui-container mui--text-center">
         Made with ♥ by <a href="https://www.muicss.com">MUICSS</a>
     </div>
 </footer>
+
+
+<!-- Angular Material Dependencies -->
+<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-aria.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.4/angular-material.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
 </body>
 </html>
